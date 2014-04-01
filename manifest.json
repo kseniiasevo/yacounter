@@ -11,8 +11,12 @@
     "scripts": ["dbHelper.js", "background.js"],
     "persistent": true
   },
+  "icons": { "16": "16x16.png",
+           "48": "16x16.png",
+          "128": "16x16.png" 
+		  },
   "browser_action": {
-    "default_title": "Set this page's color.",
+    "default_title": "Choose activity",
     "default_icon": "16x16.png",
     "default_popup": "popup.html"
   },
