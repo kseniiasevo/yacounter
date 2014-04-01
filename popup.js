@@ -131,19 +131,22 @@ document.addEventListener('DOMContentLoaded', function () {
     if (this.value == 0) {
       timerBlock.innerHTML = '00:00:00';
       clearTimeout(id);
+      chrome.browserAction.setIcon({path:"img/value-" + BGPage.lastSelectOption + ".png"});
 
       if (BGPage.lastSelectOption != 0) {
-        console.log(period + ' ' + currentOptionDate + ' ' + lastOptionDate);
-        console.log(BGPage.lastSelectOption);
+        chrome.browserAction.setIcon({path:"img/value-" + this.value + ".png"});
         BGPage.insertInStatistic(newDate, BGPage.lastSelectOption, period);
       }
 
     } else {
 
       if (BGPage.lastSelectOption != 0) {
+        chrome.browserAction.setIcon({path:"img/value-" + this.value + ".png"});
         BGPage.insertInStatistic(newDate, BGPage.lastSelectOption, period);
-        console.log(period + ' ' + currentOptionDate + ' ' + lastOptionDate);
+      } else {
+        chrome.browserAction.setIcon({path:"img/value-" + this.value + ".png"});
       }
+      
       start_timer();
 
     }

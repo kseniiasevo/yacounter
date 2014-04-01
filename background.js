@@ -17,7 +17,7 @@ function insertInStatistic(valPeriod, valOption_id, valDuration) {
 
 function selectFromStatistic(from, to, callback) {
   DBHelper.selectFromStatistic(from, to, function (transaction, result) {
-    console.log (result.rows);
+    console.log(result.rows);
     callback(result.rows);
   })
 }
@@ -28,21 +28,21 @@ chrome.windows.onRemoved.addListener(function (windowId) {
   //console.log ('test');
 });
 
-chrome.tabs.getAllInWindow( null, function( tabs ){
+chrome.tabs.getAllInWindow(null, function (tabs) {
   num_tabs = tabs.length;
 
 });
 
-chrome.tabs.onCreated.addListener(function(tab){
+chrome.tabs.onCreated.addListener(function (tab) {
   num_tabs++;
 
 });
 
-chrome.tabs.onRemoved.addListener(function(tabId){
+chrome.tabs.onRemoved.addListener(function (tabId) {
 
   num_tabs--;
 
-  if( num_tabs == 0 ) {
+  if (num_tabs == 0) {
     //alert('ok');
   }
 });

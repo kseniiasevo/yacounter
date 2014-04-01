@@ -7,35 +7,35 @@ body {
   padding: 25px;
 }
 
-.table{
-  display:table;
-  width:100%;
+.table {
+  display: table;
+  width: 100%;
 }
 
-.row{
-  display:table-row;
+.row {
+  display: table-row;
 }
 
-.col{
-  display:table-cell;
+.col {
+  display: table-cell;
   min-width: 100px;
   padding: 5px;
   border-bottom: 1px solid #696969;
 }
 
-.row:last-child .col{
+.row:last-child .col {
   border: none;
 }
 
 form.backToPopup:after {
-content: ".";
+  content: ".";
   display: block;
   height: 0;
   clear: both;
   visibility: hidden;
 }
 
-form.backToPopup input{
+form.backToPopup input {
   float: right;
   padding: 10px 15px;
   background: #fff;

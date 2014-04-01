@@ -1,43 +1,43 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  width: 150px;
-  height: 100px;
-	color: #696969;
+  min-width: 150px;
+  min-height: 100px;
+  color: #696969;
   padding: 25px;
 }
 
 form {
-    padding: 0 0 25px;
+  padding: 0 0 25px;
 }
 
 select {
-    padding: 5px;
+  padding: 5px;
 }
 
 option {
-    padding: 5px;
+  padding: 5px;
 }
 
 .action {
-    padding: 15px 0 25px;
-    clear: both;
-    cursor: pointer;
+  padding: 15px 0 25px;
+  clear: both;
+  cursor: pointer;
 }
 
 .action img {
-	width: 24px;
-	height: 24px;
-	float:  left;
+  width: 24px;
+  height: 24px;
+  float: left;
   margin-right: 10px;
 }
 
 .table-window {
-    width: 550px;
-    height: 300px;
-    background: #FFFA81;
-    display: none;
+  width: 550px;
+  height: 300px;
+  background: #FFFA81;
+  display: none;
 }
