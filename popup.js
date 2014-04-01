@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         chrome.browserAction.setIcon({path:"img/value-" + this.value + ".png"});
       }
-      
+
       start_timer();
 
     }
