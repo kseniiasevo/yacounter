@@ -43,6 +43,6 @@ chrome.tabs.onRemoved.addListener(function(tabId){
   num_tabs--;
 
   if( num_tabs == 0 ) {
-    alert('ok');
+    //alert('ok');
   }
 });
