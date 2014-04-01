@@ -1,0 +1,21 @@
+{
+  "name": "ЯСчётчик",
+  "description": "Watch your time",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "background"
+  ],
+  "background": {
+    "scripts": ["dbHelper.js", "background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Set this page's color.",
+    "default_icon": "16x16.png",
+    "default_popup": "popup.html"
+  },
+
+  "manifest_version": 2
+}

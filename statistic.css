@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 25px;
+}
+
+.table{
+  display:table;
+  width:100%;
+}
+
+.row{
+  display:table-row;
+}
+
+.col{
+  display:table-cell;
+  min-width: 100px;
+  padding: 5px;
+  border-bottom: 1px solid #696969;
+}
+
+.row:last-child .col{
+  border: none;
+}
+
+form.backToPopup:after {
+content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+form.backToPopup input{
+  float: right;
+  padding: 10px 15px;
+  background: #fff;
+  border-radius: 5px;
+  color: #FF0000;
+  border: 1px solid #696969;
+}
