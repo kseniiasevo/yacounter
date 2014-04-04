@@ -112,6 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   selectionView.addEventListener('change', function () {
 
+
+
     var lastOptionDate = BGPage.currentOptionDate;
     console.log(BGPage.currentOptionDate);
 

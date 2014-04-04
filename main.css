@@ -10,27 +10,30 @@ body {
   padding: 25px;
 }
 
-form {
+form[name="myForm"] {
   padding: 0 0 25px;
 }
 
-select {
+select[name="mySelect"] {
   padding: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 6px -5px #696969;
 }
 
-option {
-  padding: 5px;
+select[name="mySelect"] option {
+  border-bottom: 1px solid #696969;
 }
 
 .action {
-  padding: 15px 0 25px;
+  padding: 15px 0 0;
   clear: both;
   cursor: pointer;
 }
 
 .action img {
-  width: 24px;
-  height: 24px;
+  width: 21px;
+  height: 21px;
   float: left;
   margin-right: 10px;
 }

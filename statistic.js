@@ -42,6 +42,7 @@ function getDurationByMillis(sec) {
 
 
 function getStatistic(fromDate, toDate, className) {
+  console.log(fromDate + ' ' + toDate);
   BGPage.selectFromStatistic(fromDate, toDate, function (result) {
     for (var i = 0; i < result.length; i++) {
       var row = result.item(i);
@@ -55,18 +56,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var BGPage = chrome.extension.getBackgroundPage();
 
   var todayDate = new Date();
-  todayDate = todayDate.getFullYear() + "-" + todayDate.getMonth() + "-" + todayDate.getDate();
+  todayDate = todayDate.getUTCFullYear() + "-" + todayDate.getUTCMonth() + "-" + todayDate.getUTCDate();
 
   var weekAgoDate = new Date();
   weekAgoDate.setDate(weekAgoDate.getDate() - 7);
-  weekAgoDate = weekAgoDate.getFullYear() + "-" + weekAgoDate.getMonth() + "-" + weekAgoDate.getDate();
+  weekAgoDate = weekAgoDate.getUTCFullYear() + "-" + weekAgoDate.getUTCMonth() + "-" + weekAgoDate.getUTCDate();
 
   var monthAgoDate = new Date();
   monthAgoDate.setDate(monthAgoDate.getDate() - 30);
-  monthAgoDate = monthAgoDate.getFullYear() + "-" + monthAgoDate.getMonth() + "-" + monthAgoDate.getDate();
+  monthAgoDate = monthAgoDate.getUTCFullYear() + "-" + monthAgoDate.getUTCMonth() + "-" + monthAgoDate.getUTCDate();
 
   var allTime = new Date(0);
-  allTime = allTime.getFullYear() + "-" + allTime.getMonth() + "-" + allTime.getDate();
+  allTime = allTime.getUTCFullYear() + "-" + allTime.getUTCMonth() + "-" + allTime.getUTCDate();
 
 
   getStatistic(todayDate, todayDate, 'today');

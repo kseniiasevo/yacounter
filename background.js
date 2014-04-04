@@ -22,12 +22,6 @@ function selectFromStatistic(from, to, callback) {
   })
 }
 
-
-chrome.windows.onRemoved.addListener(function (windowId) {
-  //document.getElementById('test').innerHTML = 'test';
-  //console.log ('test');
-});
-
 chrome.tabs.getAllInWindow(null, function (tabs) {
   num_tabs = tabs.length;
 
@@ -43,6 +37,6 @@ chrome.tabs.onRemoved.addListener(function (tabId) {
   num_tabs--;
 
   if (num_tabs == 0) {
-    //alert('ok');
+    insertInStatistic(newDate, lastSelectOption, period);
   }
 });
