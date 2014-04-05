@@ -26,11 +26,6 @@ function DBHelper() {
     });
   }
 
-  /*SELECT *
-   FROM date_statistic
-   WHERE 'period' BETWEEN from AND to;
-   */
-
   this.selectFromStatistic = function (from1, to1, callbackResult) {
     console.log(from1 + ' ' + to1);
     mydb.transaction(function (t) {

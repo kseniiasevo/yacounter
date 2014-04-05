@@ -1,9 +1,3 @@
-/*function createOption (){
- var objSel = document.getElementById("first");
- objSel.options[objSel.options.length] = new Option("New", "blabla");
- console.log (objSel.options.length);
- }*/
-
 var BGPage = chrome.extension.getBackgroundPage();
 
 function simple_timer(sec, block) {
@@ -77,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var date = new Date();
 
-  var month = date.getUTCMonth();
+  var month = date.getUTCMonth()+1;
   var day = date.getUTCDate();
   var year = date.getUTCFullYear();
 
@@ -111,8 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   selectionView.addEventListener('change', function () {
-
-
 
     var lastOptionDate = BGPage.currentOptionDate;
     console.log(BGPage.currentOptionDate);
@@ -155,5 +147,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
     BGPage.lastSelectOption = this.value;
 
-  })
+  });
 });
