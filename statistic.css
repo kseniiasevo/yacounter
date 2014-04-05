@@ -1,7 +1,15 @@
+@font-face {
+  font-family: florence;
+  src: url(fonts/florence.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
+  font-family: florence;
+  font-size: 14px;
 }
+
 
 body {
   padding: 25px;
@@ -16,11 +24,24 @@ body {
   display: table-row;
 }
 
+.items {
+  font-weight: bold;
+  color: #2e5477;
+}
+
 .col {
   display: table-cell;
-  min-width: 100px;
-  padding: 5px;
-  border-bottom: 1px solid #696969;
+  min-width: 40px;
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #bababa;
+}
+
+.col:first-child {
+  font-weight: bold;
+  color: #84a7a9;
+  padding-left: 0;
+  text-align: left;
 }
 
 .row:last-child .col {
@@ -37,9 +58,14 @@ form.backToPopup:after {
 
 form.backToPopup input {
   float: right;
-  padding: 10px 15px;
+  margin-top: 15px;
+  margin-right: 15px;
+  padding: 3px 8px;
+  cursor: pointer;
+  font-size: 11px;
   background: #fff;
-  border-radius: 5px;
-  color: #FF0000;
-  border: 1px solid #696969;
+  border-radius: 3px;
+  color: #696969;
+  outline: none;
+  border: 1px solid #bababa;
 }

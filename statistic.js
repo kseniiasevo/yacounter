@@ -42,7 +42,6 @@ function getDurationByMillis(sec) {
 
 
 function getStatistic(fromDate, toDate, className) {
-  console.log(fromDate + ' ' + toDate);
   BGPage.selectFromStatistic(fromDate, toDate, function (result) {
     for (var i = 0; i < result.length; i++) {
       var row = result.item(i);

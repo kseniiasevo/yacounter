@@ -1,6 +1,13 @@
+@font-face {
+  font-family: florence;
+  src: url(fonts/florence.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
+  font-family: florence;
+  font-size: 16px;
 }
 
 body {
@@ -11,18 +18,14 @@ body {
 }
 
 form[name="myForm"] {
-  padding: 0 0 25px;
+  padding: 0 0 10px;
 }
 
 select[name="mySelect"] {
   padding: 5px;
-  border: none;
+  color: #84a7a9;
   outline: none;
-  box-shadow: 0px 4px 6px -5px #696969;
-}
-
-select[name="mySelect"] option {
-  border-bottom: 1px solid #696969;
+  border: 1px solid #bababa;
 }
 
 .action {
