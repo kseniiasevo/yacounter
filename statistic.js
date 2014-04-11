@@ -42,7 +42,7 @@ function getDurationByMillis(sec) {
 
 
 function getStatistic(fromDate, toDate, className) {
-  console.log(fromDate + ' ' + toDate);
+  console.log(fromDate + ' ' + toDate + ' ' + className);
   BGPage.selectFromStatistic(fromDate, toDate, function (result) {
     console.log(result.length);
     for (var i = 0; i < result.length; i++) {
@@ -55,27 +55,35 @@ function getStatistic(fromDate, toDate, className) {
 
 document.addEventListener('DOMContentLoaded', function () {
   var BGPage = chrome.extension.getBackgroundPage();
+  var day;
 
   var todayDate = new Date();
   todayDate.setMonth(todayDate.getMonth() + 1);
-  todayDate = todayDate.getUTCFullYear() + "-" + todayDate.getUTCMonth() + "-" + todayDate.getUTCDate();
+  day = todayDate.getUTCDate();
+  if (day < 10) day = '0'+day;
+  todayDate = todayDate.getUTCFullYear() + "-" + todayDate.getUTCMonth() + "-" + day;
   console.log(todayDate);
 
   var weekAgoDate = new Date();
   weekAgoDate.setDate(weekAgoDate.getDate() - 7);
   weekAgoDate.setMonth(weekAgoDate.getMonth() + 1);
-  weekAgoDate = weekAgoDate.getUTCFullYear() + "-" + weekAgoDate.getUTCMonth() + "-" + weekAgoDate.getUTCDate();
+  day = weekAgoDate.getUTCDate();
+  if (day < 10) day = '0'+day;
+  weekAgoDate = weekAgoDate.getUTCFullYear() + "-" + weekAgoDate.getUTCMonth() + "-" + day;
+  console.log(weekAgoDate);
 
   var monthAgoDate = new Date();
   monthAgoDate.setDate(monthAgoDate.getDate() - 30);
   monthAgoDate.setMonth(monthAgoDate.getMonth() + 1);
-  monthAgoDate = monthAgoDate.getUTCFullYear() + "-" + monthAgoDate.getUTCMonth() + "-" + monthAgoDate.getUTCDate();
-  console.log(monthAgoDate);
+  day = monthAgoDate.getUTCDate();
+  if (day < 10) day = '0'+day;
+  monthAgoDate = monthAgoDate.getUTCFullYear() + "-" + monthAgoDate.getUTCMonth() + "-" + day;
 
   var allTime = new Date(0);
   allTime.setMonth(allTime.getMonth() + 1);
-  allTime = allTime.getUTCFullYear() + "-" + allTime.getUTCMonth() + "-" + allTime.getUTCDate();
-
+  day = allTime.getUTCDate();
+  if (day < 10) day = '0'+day;
+  allTime = allTime.getUTCFullYear() + "-" + allTime.getUTCMonth() + "-" + day;
 
   getStatistic(todayDate, todayDate, 'today');
   getStatistic(weekAgoDate, todayDate, 'week');

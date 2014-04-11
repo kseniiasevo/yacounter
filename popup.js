@@ -69,14 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var openPopupDate = +new Date();
 
-  var date = new Date();
-
-  var month = date.getUTCMonth()+1;
-  var day = date.getUTCDate();
-  var year = date.getUTCFullYear();
-
-  var newDate = year + "-" + month + "-" + day;
-
   BGPage.getOptions(function (result) {
     for (var i = 0; i < result.length; i++) {
       var row = result.item(i);
@@ -100,18 +92,28 @@ document.addEventListener('DOMContentLoaded', function () {
     diff_time(openPopupDate, openPopupDate);
     clearTimeout(id);
   } else {
-    console.log(BGPage.currentOptionDate);
     diff_time(openPopupDate, BGPage.currentOptionDate);
   }
 
   selectionView.addEventListener('change', function () {
+    var date = new Date();
+
+    var month = date.getUTCMonth() + 1;
+    var day = date.getUTCDate();
+    var year = date.getUTCFullYear();
+
+    BGPage.newDate = year + "-" + month + "-" + day;
 
     var lastOptionDate = BGPage.currentOptionDate;
-    console.log(BGPage.currentOptionDate);
 
     var currentOptionDate = +new Date();
 
-    var period = currentOptionDate - lastOptionDate;
+    if (BGPage.prevPeriod != 0) {
+      BGPage.period = currentOptionDate - lastOptionDate - BGPage.prevPeriod;
+      BGPage.prevPeriod = 0;
+    } else {
+      BGPage.period = currentOptionDate - lastOptionDate;
+    }
 
     var option = this.options[this.value];
     for (var i = 0; i < this.options.length; i++) {
@@ -125,24 +127,22 @@ document.addEventListener('DOMContentLoaded', function () {
     if (this.value == 0) {
       timerBlock.innerHTML = '00:00:00';
       clearTimeout(id);
-      chrome.browserAction.setIcon({path:"img/value-" + BGPage.lastSelectOption + ".png"});
+      chrome.browserAction.setIcon({path: "img/value-" + BGPage.lastSelectOption + ".png"});
 
       if (BGPage.lastSelectOption != 0) {
-        chrome.browserAction.setIcon({path:"img/value-" + this.value + ".png"});
-        BGPage.insertInStatistic(newDate, BGPage.lastSelectOption, period);
+        chrome.browserAction.setIcon({path: "img/value-" + this.value + ".png"});
+        BGPage.insertInStatistic(BGPage.newDate, BGPage.lastSelectOption, BGPage.period);
       }
-
     } else {
 
       if (BGPage.lastSelectOption != 0) {
-        chrome.browserAction.setIcon({path:"img/value-" + this.value + ".png"});
-        BGPage.insertInStatistic(newDate, BGPage.lastSelectOption, period);
+        chrome.browserAction.setIcon({path: "img/value-" + this.value + ".png"});
+        BGPage.insertInStatistic(BGPage.newDate, BGPage.lastSelectOption, BGPage.period);
       } else {
-        chrome.browserAction.setIcon({path:"img/value-" + this.value + ".png"});
+        chrome.browserAction.setIcon({path: "img/value-" + this.value + ".png"});
       }
 
       start_timer();
-
     }
 
     BGPage.lastSelectOption = this.value;
