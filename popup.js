@@ -2,14 +2,13 @@ var BGPage = chrome.extension.getBackgroundPage();
 
 function simple_timer(sec, block) {
 
-  var date = new Date(sec);
-
-  var year = date.getUTCFullYear() - 1970;
-  var month = date.getUTCMonth();
-  var day = date.getUTCDate() - 1;
-  var hour = date.getUTCHours();
-  var minutes = date.getUTCMinutes();
-  var seconds = date.getUTCSeconds();
+  var date = new Date(sec),
+    year = date.getUTCFullYear() - 1970,
+    month = date.getUTCMonth(),
+    day = date.getUTCDate() - 1,
+    hour = date.getUTCHours(),
+    minutes = date.getUTCMinutes(),
+    seconds = date.getUTCSeconds();
 
   if (hour < 1) hour = 0;
   if (hour < 10) hour = '0' + hour;
@@ -96,11 +95,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   selectionView.addEventListener('change', function () {
-    var date = new Date();
-
-    var month = date.getUTCMonth() + 1;
-    var day = date.getUTCDate();
-    var year = date.getUTCFullYear();
+    var date = new Date(),
+      month = date.getUTCMonth() + 1,
+      day = date.getUTCDate(),
+      year = date.getUTCFullYear();
 
     BGPage.newDate = year + "-" + month + "-" + day;
 
@@ -122,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
     option.setAttribute('selected', 'selected');
 
     BGPage.currentOptionDate = currentOptionDate;
-    console.log(BGPage.currentOptionDate);
 
     if (this.value == 0) {
       timerBlock.innerHTML = '00:00:00';

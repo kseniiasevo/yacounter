@@ -1,42 +1,42 @@
-var lastSelectOption = 0;
-var currentOptionDate = 0;
-var newDate = 0;
-var period = 0;
-var prevPeriod = 0;
-
-var DBHelper = new DBHelper;
+var lastSelectOption = 0,
+  currentOptionDate = 0,
+  newDate = 0,
+  period = 0,
+  prevPeriod = 0,
+  DBHelper = new DBHelper;
 
 DBHelper.create();
 
-function midnFunc() {
-  period = +new Date() - currentOptionDate;
-  prevPeriod = period;
-  console.log(prevPeriod);
-  insertInStatistic(newDate, lastSelectOption, period);
-}
 
-function callfunc(diff) {
-  setTimeout(midnFunc, diff);
-}
+var now = new Date(),
+  hours = now.getHours(),
+  minutes = now.getMinutes(),
+  sec = now.getSeconds(),
+  midnight = '23:59:59';
 
-var now = new Date();
-hours = now.getHours();
 if (hours < 10) hours = '0' + hours;
-minutes = now.getMinutes();
 if (minutes < 10) minutes = '0' + minutes;
-sec = now.getSeconds();
-if (sec < 10) sec = '0'+sec;
+if (sec < 10) sec = '0' + sec;
 now = hours + ':' + minutes + ':' + sec;
-console.log(now);
 
-var midnight = '23:59:59';
 
 var time = +new Date("January 01, 1970 " + now);
 midnight = +new Date("January 01, 1970 " + midnight);
 var diff = midnight - time;
 
-callfunc(diff);
 
+
+function midnFunc() {
+  period = +new Date() - currentOptionDate;
+  prevPeriod = period;
+  insertInStatistic(newDate, lastSelectOption, period);
+  diff = 86400000;
+  setTimeout(midnFunc, diff);
+}
+
+function callfunc(diff) {
+  setTimeout(midnFunc, diff);
+}
 
 function getOptions(callback) {
   DBHelper.selectOptions(function (transaction, result) {
@@ -73,3 +73,6 @@ chrome.tabs.onRemoved.addListener(function (tabId) {
 
   }
 });
+
+
+callfunc(diff);
