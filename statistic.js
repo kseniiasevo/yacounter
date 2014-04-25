@@ -38,6 +38,7 @@ function getDurationByMillis(sec) {
     result = year + 'y ' + month + 'm ' + day + 'd ' + hour + ':' + minutes + ':' + seconds;
   }
   return result;
+
 }
 
 

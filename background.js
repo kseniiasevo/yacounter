@@ -30,11 +30,13 @@ function midnFunc() {
   period = +new Date() - currentOptionDate;
   prevPeriod = period;
   insertInStatistic(newDate, lastSelectOption, period);
+  console.log(newDate+' '+lastSelectOption+' '+period);
   diff = 86400000;
   setTimeout(midnFunc, diff);
 }
 
 function callfunc(diff) {
+  console.log(diff);
   setTimeout(midnFunc, diff);
 }
 

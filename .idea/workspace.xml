@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="popup.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="popup.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="49" selection-start="3304" selection-end="3304" vertical-scroll-proportion="2.2830188" vertical-offset="0" max-vertical-offset="2601">
+            <state line="146" column="3" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.0" vertical-offset="843" max-vertical-offset="2584">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="background.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/background.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="15" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1411">
+            <state line="13" column="25" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="statistic.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statistic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="59" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1768">
+            <state line="50" column="45" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="dbHelper.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbHelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="3" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+            <state line="32" column="7" selection-start="1797" selection-end="1797" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
               <folding>
                 <marker date="1398154413341" expanded="true" signature="313:464" placeholder="CREATE TABLE..date_statistic..." />
                 <marker date="1398154413341" expanded="true" signature="520:612" placeholder="CREATE TABLE..options..." />
@@ -72,7 +72,7 @@
       <file leaf-file-name="popup.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/popup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="23" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="595">
+            <state line="16" column="23" selection-start="368" selection-end="368" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -105,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manifest.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="manifest.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="19" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="527">
+            <state line="25" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.24781342" vertical-offset="0" max-vertical-offset="1715">
               <folding />
             </state>
           </provider>
@@ -131,10 +131,10 @@
         <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/statistic.html" />
         <option value="$PROJECT_DIR$/popup.html" />
-        <option value="$PROJECT_DIR$/dbHelper.js" />
-        <option value="$PROJECT_DIR$/statistic.js" />
         <option value="$PROJECT_DIR$/statistic.css" />
+        <option value="$PROJECT_DIR$/dbHelper.js" />
         <option value="$PROJECT_DIR$/background.js" />
+        <option value="$PROJECT_DIR$/statistic.js" />
         <option value="$PROJECT_DIR$/popup.js" />
       </list>
     </option>
@@ -143,8 +143,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1096" />
+    <option name="height" value="1896" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -273,15 +273,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1096" height="1896" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17838125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2495183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32851636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -621,23 +621,9 @@
         <state line="221" column="21" selection-start="4341" selection-end="4341" vertical-scroll-proportion="0.33215547" vertical-offset="3569" max-vertical-offset="4335" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="21" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="346" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="595">
           <folding />
         </state>
       </provider>
@@ -656,23 +642,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="3" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.0" vertical-offset="843" max-vertical-offset="2584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/background.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="15" selection-start="1546" selection-end="1546" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1411">
+        <state line="13" column="25" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statistic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="59" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.0" vertical-offset="744" max-vertical-offset="1768">
+        <state line="50" column="45" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbHelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="3" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="799">
+        <state line="32" column="7" selection-start="1797" selection-end="1797" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <folding>
             <marker date="1398154413341" expanded="true" signature="313:464" placeholder="CREATE TABLE..date_statistic..." />
             <marker date="1398154413341" expanded="true" signature="520:612" placeholder="CREATE TABLE..options..." />
@@ -687,9 +680,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/popup.js">
+    <entry file="file://$PROJECT_DIR$/popup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="49" selection-start="3304" selection-end="3304" vertical-scroll-proportion="2.2830188" vertical-offset="0" max-vertical-offset="2601">
+        <state line="16" column="23" selection-start="368" selection-end="368" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="1" selection-start="490" selection-end="490" vertical-scroll-proportion="0.24781342" vertical-offset="0" max-vertical-offset="1715">
           <folding />
         </state>
       </provider>

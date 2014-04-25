@@ -15,7 +15,6 @@ function simple_timer(sec, block) {
 
   if (minutes < 1) minutes = 0;
   if (minutes < 10) minutes = '0' + minutes;
-
   if (seconds < 10) seconds = '0' + seconds;
 
   if (day < 1) {
